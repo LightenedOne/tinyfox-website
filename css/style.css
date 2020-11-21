@@ -9,6 +9,8 @@ body {
   font-size: 10px;
   background-color: #FFFBFB;
   font-family: "Cabin", sans-serif;
+  background: url(/img/background.svg) no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -72,6 +74,11 @@ body {
   margin-bottom: 40px;
 }
 
+.main-nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .main-nav a {
   font-size: 2rem;
   text-decoration: none;
@@ -86,4 +93,25 @@ body {
 .main-nav .current-page a {
   color: #FFFBFB;
   font-weight: bold;
+}
+
+footer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1 / 6;
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 2;
+  grid-row: 11 / 13;
+}
+
+.social {
+  margin: 40px;
+  margin-top: 80px;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 3em;
+  color: #FFFBFB;
 }
