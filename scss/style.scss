@@ -1,0 +1,76 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 10px;
+    background-color: $text-color-light;
+    font-family: $font-stack-body;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+.logo-header {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    border: 4px $text-color-dark solid;
+    border-radius: 60px;
+    transform: rotate(-5deg);
+    background-color: $primary-color;
+    min-width: 100%;
+}
+.logo-header h1 {
+    font-family: $font-stack-web-title;
+    font-size: 6em;
+    text-align: center;
+    color: $text-color-light
+}
+
+.logo span {
+    color: $accent-color;
+}
+
+.main-nav {
+    grid-column: 4 / 6;
+    grid-row: 4 / 8;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        background-color: $secondary-color;
+        border: 4px $text-color-dark solid;
+        border-radius: 60px;
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 40px;
+    }
+    
+    a {
+        font-size: 2rem;
+        text-decoration: none;
+        color: $text-color-dark;
+        font-family: $font-stack-header;
+    }
+
+    .current-page {
+        background-color: $accent-color;
+        a {
+            color: $text-color-light;
+            font-weight: bold;
+        }
+    }
+    
+}
