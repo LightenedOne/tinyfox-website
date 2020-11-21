@@ -9,7 +9,7 @@ body {
   font-size: 10px;
   background-color: #FFFBFB;
   font-family: "Cabin", sans-serif;
-  background: url(img/background.svg) no-repeat;
+  background: url(/img/background.svg) no-repeat;
   background-size: cover;
 }
 
